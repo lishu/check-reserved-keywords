@@ -11,15 +11,19 @@ npm install check-reserved-keywords --save
 ## use
 
 ```js
-import { isReservedKeywords } from 'check-reserved-keywords';
+import { isReservedKeywords, checkReservedKeywords } from 'check-reserved-keywords';
 
+// Test word for langauge
 const result = isReservedKeywords('const', ['ES6']);
-
 if (result) {
     console.log(`'const' is ES6 reserved keywords`);
 } else {
     console.log(`'const' is not ES6 reserved keywords`);
 }
+
+// known word in all include languages
+const langauges = checkReservedKeywords('select', undefined, true);
+console.debug(`select is reserved keyword in ${langauges.join(', ')}`);
 
 ```
 
