@@ -2,10 +2,23 @@
   "name": "check-reserved-keywords",
   "version": "1.0.0",
   "description": "Check commonly used languages reserved keywords",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publisher": "yl_ls",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/lishu/check-reserved-keywords"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "typescript": "^4.8.4"
+  }
 }
